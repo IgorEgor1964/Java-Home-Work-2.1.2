@@ -3,15 +3,15 @@ public class Main {
         boolean account = true;
         int limit = 1000; // если клиент пополняет счёт более чем на 1000 рублей
         int balance = 100; // на счёте 100 рублей
-        int topUp = 2000; // пополнить счет на сумму ...
-        int moneyBonus = balance + topUp + topUp/100;
-        int moneyAmount = balance + topUp;
+        int top = 2000; // пополнить счет на сумму ...
+        int bonus = balance + top + top / 100;
+        int amount = balance + top;
 
-        if (topUp > limit) {
-            System.out.println(moneyBonus);
+        if (top > limit) {
+            System.out.println(bonus);
         }
-        if (topUp <= limit) {
-            System.out.println(moneyAmount);
+        if (top <= limit) {
+            System.out.println(amount);
         }
     }
 }
